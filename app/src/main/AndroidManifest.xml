@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prmobiapp.ustamilfm">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    <application
+        android:name=".activity.Aapplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name="com.prmobiapp.ustamilfm.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.prmobiapp.ustamilfm.ProgramViewActivity"
+            android:label="@string/title_activity_program_view"
+            android:theme="@style/FullHeightDialog" />
+        <activity
+            android:name="com.prmobiapp.ustamilfm.YoutubePlayer"
+            android:label="@string/title_activity_youtube_player"
+            android:parentActivityName=".activity.MainActivity"
+
+            android:screenOrientation="landscape"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.prmobiapp.ustamilfm.activity.EventFullPageView"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullHeightDialog" />
+        <activity
+            android:name="com.prmobiapp.ustamilfm.RjProgramView"
+            android:theme="@style/FullHeightDialog" />
+        <activity
+            android:name="com.prmobiapp.ustamilfm.SplashScreen"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.ustamilfm.com"
+                    android:scheme="http" />
+                <data
+                    android:host="www.ustamilfm.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.prmobiapp.ustamilfm.Help" />
+        <activity android:name="com.prmobiapp.ustamilfm.PrivacyPolicy">
+
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value=".activity.MainActivity"></meta-data> -->
+        </activity>
+        <activity
+            android:name="com.prmobiapp.ustamilfm.Setting"
+            android:label="@string/app_setname"
+            android:theme="@style/MyMaterialTheme" />
+
+
+        <!--
+                 Optionally, register AnalyticsReceiver and AnalyticsService to support background
+                 dispatching on non-Google Play devices
+               -->
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!--
+             Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable
+             installation campaign reporting
+        -->
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <service android:name=".MyService" />
+
+        <!--<service-->
+            <!--android:name=".MyJOBService"-->
+            <!--android:label="Word service1"-->
+            <!--android:permission="android.permission.BIND_JOB_SERVICE"/>-->
+
+        <!--<service-->
+            <!--android:name=".JobScheduleExample"-->
+            <!--android:label="Word service"-->
+            <!--android:permission="android.permission.BIND_JOB_SERVICE"/>-->
+
+
+
+        <receiver android:name=".NotificationBroadcast">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <!--<action android:name="android.intent.action.ACTION_HEADSET_PLUG"/>-->
+                <!--<action android:name="android.intent.action.HEADSET_PLUG" />-->
+                <!--<action android:name="android.media.AUDIO_BECOMING_NOISY" />-->
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c08c2a19f1cd232efd6715c827b0eb4fa3404f5d"
+            />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,66 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardBackgroundColor="#FFA"
+    card_view:layout_margind="8dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPadding="8dp"
+    android:id="@+id/programitemsview">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+        <TextView
+            android:id="@+id/programshowname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:text="dafdafda"
+            android:textColor="#222"
+            android:textSize="15dp"
+            android:layout_below="@+id/programrjname"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_toEndOf="@+id/thumbnail" />
+        <TextView
+            android:id="@+id/programrjname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:text="dafdafda"
+            android:textColor="#222"
+            android:textSize="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_toEndOf="@+id/thumbnail" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/rightarrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

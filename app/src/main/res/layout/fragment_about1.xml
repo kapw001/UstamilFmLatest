@@ -1,0 +1,259 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:lineSpacingExtra="1.5dp"
+                    android:text="US Tamil FM is a 24/7 Tamil Radio Station solely created for the Tamilians across the United States. "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:lineSpacingExtra="1.5dp"
+                    android:text="Listen to our shows for the best and latest Tamil Hits, Hot Gossips of Kollywood, Interesting tips and DIY's, enter Polls and contests, to connect with our RJ's and many more. "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:lineSpacingExtra="1.5dp"
+                    android:text="US Tamil FM brings you interesting showbiz updates to brighten your evenings and relax you after a stressful day.
+        "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:lineSpacingExtra="1.5dp"
+                    android:text="Available on all the time zones, PST, MST, CST, EST."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:lineSpacingExtra="1.5dp"
+                    android:text="Stay connected with us through Web or App."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:src="@drawable/support2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="Location:"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:lineSpacingExtra="4dp"
+                                android:text=" P.O Box 92722,\n Austin, TX - 78709." />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="    Phone:"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:lineSpacingExtra="4dp"
+                                android:text=" +1 512-777-1271\n +1 954- 99T-AMIL(8-2645)" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="      Email:"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:lineSpacingExtra="4dp"
+                                android:text=" info@ustamilfm.com" />
+                        </TableRow>
+
+                    </TableLayout>
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:paddingBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/twitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/googleplusimg"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/twitter" />
+
+                    <ImageView
+                        android:id="@+id/googleplusimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/twitter"
+                        android:layout_toStartOf="@+id/twitter"
+                        android:src="@drawable/googleplusimg" />
+
+                    <ImageView
+                        android:id="@+id/youtube"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/twitter"
+                        android:layout_toRightOf="@+id/twitter"
+                        android:src="@drawable/youtube" />
+
+                    <ImageView
+                        android:id="@+id/facebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/googleplusimg"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/googleplusimg"
+                        android:layout_toStartOf="@+id/googleplusimg"
+                        android:src="@drawable/facebook" />
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

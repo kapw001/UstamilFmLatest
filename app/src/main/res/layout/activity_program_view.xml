@@ -1,0 +1,46 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:squint="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+            <ImageView
+                android:id="@+id/programbigimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/tamildes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/programbigimage"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="6dp"
+                android:lineSpacingMultiplier="1.0"
+                android:maxLines="10"
+                android:paddingTop="8dp"
+                android:text="Des"
+                android:textColor="#666"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>

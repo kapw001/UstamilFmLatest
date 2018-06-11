@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:background="@drawable/editselector"
+            android:inputType="textPersonName"
+            android:hint="Name *"
+            android:ems="10"
+            android:layout_weight="1"
+            android:id="@+id/name" />
+
+        <EditText
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:background="@drawable/editselector"
+            android:inputType="textEmailAddress"
+            android:hint="Email *"
+            android:ems="10"
+            android:id="@+id/email"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:background="@drawable/editselector"
+            android:inputType="number"
+            android:hint="Phone Number *"
+            android:ems="10"
+            android:layout_weight="1"
+            android:id="@+id/dedicatedto" />
+
+        <EditText
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:background="@drawable/editselector"
+            android:inputType="textEmailAddress"
+            android:hint="City,State *"
+            android:ems="10"
+            android:id="@+id/citystate"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:background="@drawable/editselector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:hint="Messages *"
+            android:ems="10"
+            android:id="@+id/messages" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="Browse..."
+                android:layout_margin="30dp"
+                android:background="@drawable/buttonselector"
+                android:id="@+id/but" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-25dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="No Selected File"
+                android:textSize="12sp"
+                android:id="@+id/uptxt"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/but"
+                android:layout_toEndOf="@+id/but" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="Send Mail"
+                android:id="@+id/sendmail"
+
+                android:background="@drawable/buttonselector"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="47dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

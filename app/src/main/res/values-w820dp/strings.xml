@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name"  translatable="false">Material Design</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="action_search" translatable="false">Search</string>
+    <string name="drawer_open" translatable="false">Open</string>
+    <string name="drawer_close" translatable="false">Close</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items"  translatable="false">
+        <item >Home</item>
+        <item >Find People</item>
+        <item >Photos</item>
+        <item >Communities</item>
+        <item >Pages</item>
+        <item >What\'s Hot</item>
+        <item >What\'s Hot</item>
+        <item >What\'s Hot</item>
+        <item >What\'s Hot</item>
+        <item >What\'s Hot</item>
+        <item >What\'s Hot</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons"  translatable="false">
+
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon" translatable="false">Item Icon</string>
+    <string name="nav_item_home" translatable="false">Home</string>
+    <string name="nav_item_friends" translatable="false">Friends</string>
+    <string name="nav_item_notifications" translatable="false">Messages</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels"  translatable="false">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+    <string name="title_messages" translatable="false">Messages</string>
+    <string name="title_friends" translatable="false">Friends</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="progress" translatable="false">progress</string>
+    <string name="back" translatable="false">Back</string>
+    <string name="pause" translatable="false">Pause</string>
+    <string name="play" translatable="false">Play</string>
+    <string name="player" translatable="false">Audio Player</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="open_playlist" translatable="false">Open Playlist</string>
+    <string name="idle" translatable="false">Idle</string>
+    <string name="empty_text" translatable="false">Select song from below to play</string>
+    <string name="player_button" translatable="false">Album Art Screen</string>
+
+    <color name="orange" translatable="false">#ff3d00</color>
+    <color name="white" translatable="false">#ffffff</color>
+    <color name="opaque" translatable="false">#70000000</color>
+
+    <dimen name="button_width" translatable="false">32dp</dimen>
+    <dimen name="small_button_width" translatable="false">28dp</dimen>
+    <dimen name="small_image_art_width" translatable="false">85dp</dimen>
+</resources>
